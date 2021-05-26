@@ -8,19 +8,19 @@ import 'children_extensions.dart';
 
 class SleekFlex extends StatelessWidget {
   final Axis direction;
-  final SleekInsets padding;
-  final SleekSpace spaceBetween;
+  final SleekInsets? padding;
+  final SleekSpace? spaceBetween;
   final List<Widget> children;
   final MainAxisAlignment mainAxisAlignment;
   final MainAxisSize mainAxisSize;
   final CrossAxisAlignment crossAxisAlignment;
   final VerticalDirection verticalDirection;
-  final TextDirection textDirection;
-  final TextBaseline textBaseline;
+  final TextDirection? textDirection;
+  final TextBaseline? textBaseline;
 
   const SleekFlex({
-    Key key,
-    @required this.direction,
+    Key? key,
+    required this.direction,
     this.mainAxisAlignment = MainAxisAlignment.start,
     this.mainAxisSize = MainAxisSize.max,
     this.crossAxisAlignment = CrossAxisAlignment.center,
@@ -56,7 +56,7 @@ class SleekFlex extends StatelessWidget {
 
     if (padding != null) {
       result = SleekPadding(
-        padding: padding,
+        padding: padding!,
         child: result,
       );
     }
@@ -70,15 +70,15 @@ class SleekFlex extends StatelessWidget {
 
 class SleekColumn extends SleekFlex {
   const SleekColumn({
-    Key key,
+    Key? key,
     MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
     MainAxisSize mainAxisSize = MainAxisSize.max,
     CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
-    TextDirection textDirection,
+    TextDirection? textDirection,
     VerticalDirection verticalDirection = VerticalDirection.down,
-    TextBaseline textBaseline,
-    SleekInsets padding,
-    SleekSpace spaceBetween,
+    TextBaseline? textBaseline,
+    SleekInsets? padding,
+    SleekSpace? spaceBetween,
     List<Widget> children = const <Widget>[],
   }) : super(
           children: children,
@@ -97,15 +97,15 @@ class SleekColumn extends SleekFlex {
 
 class SleekRow extends SleekFlex {
   const SleekRow({
-    Key key,
+    Key? key,
     MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
     MainAxisSize mainAxisSize = MainAxisSize.max,
     CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
-    TextDirection textDirection,
+    TextDirection? textDirection,
     VerticalDirection verticalDirection = VerticalDirection.down,
-    TextBaseline textBaseline,
-    SleekInsets padding,
-    SleekSpace spaceBetween,
+    TextBaseline? textBaseline,
+    SleekInsets? padding,
+    SleekSpace? spaceBetween,
     List<Widget> children = const <Widget>[],
   }) : super(
           children: children,

@@ -11,14 +11,14 @@ class SleekWrap extends StatelessWidget {
   final WrapAlignment alignment;
   final SleekSpace runSpacing;
   final SleekSpace spacing;
-  final SleekInsets padding;
+  final SleekInsets? padding;
   final WrapAlignment runAlignment;
   final WrapCrossAlignment crossAxisAlignment;
-  final TextDirection textDirection;
+  final TextDirection? textDirection;
   final VerticalDirection verticalDirection;
 
   const SleekWrap({
-    Key key,
+    Key? key,
     this.padding,
     this.direction = Axis.horizontal,
     this.alignment = WrapAlignment.start,
@@ -48,7 +48,7 @@ class SleekWrap extends StatelessWidget {
 
     if (padding != null) {
       result = SleekPadding(
-        padding: padding,
+        padding: padding!,
         child: result,
       );
     }

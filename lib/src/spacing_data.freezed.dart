@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'spacing_data.dart';
 
@@ -9,16 +9,20 @@ part of 'spacing_data.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
+/// @nodoc
 class _$SleekSpacingDataTearOff {
   const _$SleekSpacingDataTearOff();
 
   _SleekSpacingData _(
-      {@required double extraSmall,
-      @required double small,
-      @required double normal,
-      @required double medium,
-      @required double big,
-      @required double extraBig}) {
+      {required double extraSmall,
+      required double small,
+      required double normal,
+      required double medium,
+      required double big,
+      required double extraBig}) {
     return _SleekSpacingData(
       extraSmall: extraSmall,
       small: small,
@@ -30,20 +34,24 @@ class _$SleekSpacingDataTearOff {
   }
 }
 
-// ignore: unused_element
+/// @nodoc
 const $SleekSpacingData = _$SleekSpacingDataTearOff();
 
+/// @nodoc
 mixin _$SleekSpacingData {
-  double get extraSmall;
-  double get small;
-  double get normal;
-  double get medium;
-  double get big;
-  double get extraBig;
+  double get extraSmall => throw _privateConstructorUsedError;
+  double get small => throw _privateConstructorUsedError;
+  double get normal => throw _privateConstructorUsedError;
+  double get medium => throw _privateConstructorUsedError;
+  double get big => throw _privateConstructorUsedError;
+  double get extraBig => throw _privateConstructorUsedError;
 
-  $SleekSpacingDataCopyWith<SleekSpacingData> get copyWith;
+  @JsonKey(ignore: true)
+  $SleekSpacingDataCopyWith<SleekSpacingData> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
+/// @nodoc
 abstract class $SleekSpacingDataCopyWith<$Res> {
   factory $SleekSpacingDataCopyWith(
           SleekSpacingData value, $Res Function(SleekSpacingData) then) =
@@ -57,6 +65,7 @@ abstract class $SleekSpacingDataCopyWith<$Res> {
       double extraBig});
 }
 
+/// @nodoc
 class _$SleekSpacingDataCopyWithImpl<$Res>
     implements $SleekSpacingDataCopyWith<$Res> {
   _$SleekSpacingDataCopyWithImpl(this._value, this._then);
@@ -67,25 +76,43 @@ class _$SleekSpacingDataCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object extraSmall = freezed,
-    Object small = freezed,
-    Object normal = freezed,
-    Object medium = freezed,
-    Object big = freezed,
-    Object extraBig = freezed,
+    Object? extraSmall = freezed,
+    Object? small = freezed,
+    Object? normal = freezed,
+    Object? medium = freezed,
+    Object? big = freezed,
+    Object? extraBig = freezed,
   }) {
     return _then(_value.copyWith(
-      extraSmall:
-          extraSmall == freezed ? _value.extraSmall : extraSmall as double,
-      small: small == freezed ? _value.small : small as double,
-      normal: normal == freezed ? _value.normal : normal as double,
-      medium: medium == freezed ? _value.medium : medium as double,
-      big: big == freezed ? _value.big : big as double,
-      extraBig: extraBig == freezed ? _value.extraBig : extraBig as double,
+      extraSmall: extraSmall == freezed
+          ? _value.extraSmall
+          : extraSmall // ignore: cast_nullable_to_non_nullable
+              as double,
+      small: small == freezed
+          ? _value.small
+          : small // ignore: cast_nullable_to_non_nullable
+              as double,
+      normal: normal == freezed
+          ? _value.normal
+          : normal // ignore: cast_nullable_to_non_nullable
+              as double,
+      medium: medium == freezed
+          ? _value.medium
+          : medium // ignore: cast_nullable_to_non_nullable
+              as double,
+      big: big == freezed
+          ? _value.big
+          : big // ignore: cast_nullable_to_non_nullable
+              as double,
+      extraBig: extraBig == freezed
+          ? _value.extraBig
+          : extraBig // ignore: cast_nullable_to_non_nullable
+              as double,
     ));
   }
 }
 
+/// @nodoc
 abstract class _$SleekSpacingDataCopyWith<$Res>
     implements $SleekSpacingDataCopyWith<$Res> {
   factory _$SleekSpacingDataCopyWith(
@@ -101,6 +128,7 @@ abstract class _$SleekSpacingDataCopyWith<$Res>
       double extraBig});
 }
 
+/// @nodoc
 class __$SleekSpacingDataCopyWithImpl<$Res>
     extends _$SleekSpacingDataCopyWithImpl<$Res>
     implements _$SleekSpacingDataCopyWith<$Res> {
@@ -113,41 +141,54 @@ class __$SleekSpacingDataCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object extraSmall = freezed,
-    Object small = freezed,
-    Object normal = freezed,
-    Object medium = freezed,
-    Object big = freezed,
-    Object extraBig = freezed,
+    Object? extraSmall = freezed,
+    Object? small = freezed,
+    Object? normal = freezed,
+    Object? medium = freezed,
+    Object? big = freezed,
+    Object? extraBig = freezed,
   }) {
     return _then(_SleekSpacingData(
-      extraSmall:
-          extraSmall == freezed ? _value.extraSmall : extraSmall as double,
-      small: small == freezed ? _value.small : small as double,
-      normal: normal == freezed ? _value.normal : normal as double,
-      medium: medium == freezed ? _value.medium : medium as double,
-      big: big == freezed ? _value.big : big as double,
-      extraBig: extraBig == freezed ? _value.extraBig : extraBig as double,
+      extraSmall: extraSmall == freezed
+          ? _value.extraSmall
+          : extraSmall // ignore: cast_nullable_to_non_nullable
+              as double,
+      small: small == freezed
+          ? _value.small
+          : small // ignore: cast_nullable_to_non_nullable
+              as double,
+      normal: normal == freezed
+          ? _value.normal
+          : normal // ignore: cast_nullable_to_non_nullable
+              as double,
+      medium: medium == freezed
+          ? _value.medium
+          : medium // ignore: cast_nullable_to_non_nullable
+              as double,
+      big: big == freezed
+          ? _value.big
+          : big // ignore: cast_nullable_to_non_nullable
+              as double,
+      extraBig: extraBig == freezed
+          ? _value.extraBig
+          : extraBig // ignore: cast_nullable_to_non_nullable
+              as double,
     ));
   }
 }
+
+/// @nodoc
 
 class _$_SleekSpacingData
     with DiagnosticableTreeMixin
     implements _SleekSpacingData {
   const _$_SleekSpacingData(
-      {@required this.extraSmall,
-      @required this.small,
-      @required this.normal,
-      @required this.medium,
-      @required this.big,
-      @required this.extraBig})
-      : assert(extraSmall != null),
-        assert(small != null),
-        assert(normal != null),
-        assert(medium != null),
-        assert(big != null),
-        assert(extraBig != null);
+      {required this.extraSmall,
+      required this.small,
+      required this.normal,
+      required this.medium,
+      required this.big,
+      required this.extraBig});
 
   @override
   final double extraSmall;
@@ -210,6 +251,7 @@ class _$_SleekSpacingData
       const DeepCollectionEquality().hash(big) ^
       const DeepCollectionEquality().hash(extraBig);
 
+  @JsonKey(ignore: true)
   @override
   _$SleekSpacingDataCopyWith<_SleekSpacingData> get copyWith =>
       __$SleekSpacingDataCopyWithImpl<_SleekSpacingData>(this, _$identity);
@@ -217,25 +259,27 @@ class _$_SleekSpacingData
 
 abstract class _SleekSpacingData implements SleekSpacingData {
   const factory _SleekSpacingData(
-      {@required double extraSmall,
-      @required double small,
-      @required double normal,
-      @required double medium,
-      @required double big,
-      @required double extraBig}) = _$_SleekSpacingData;
+      {required double extraSmall,
+      required double small,
+      required double normal,
+      required double medium,
+      required double big,
+      required double extraBig}) = _$_SleekSpacingData;
 
   @override
-  double get extraSmall;
+  double get extraSmall => throw _privateConstructorUsedError;
   @override
-  double get small;
+  double get small => throw _privateConstructorUsedError;
   @override
-  double get normal;
+  double get normal => throw _privateConstructorUsedError;
   @override
-  double get medium;
+  double get medium => throw _privateConstructorUsedError;
   @override
-  double get big;
+  double get big => throw _privateConstructorUsedError;
   @override
-  double get extraBig;
+  double get extraBig => throw _privateConstructorUsedError;
   @override
-  _$SleekSpacingDataCopyWith<_SleekSpacingData> get copyWith;
+  @JsonKey(ignore: true)
+  _$SleekSpacingDataCopyWith<_SleekSpacingData> get copyWith =>
+      throw _privateConstructorUsedError;
 }

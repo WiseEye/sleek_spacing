@@ -3,7 +3,7 @@ import 'gaps.dart';
 import 'space.dart';
 
 extension WidgetIterableExtension on Iterable<Widget> {
-  List<Widget> spaced(SleekSpace space) {
+  List<Widget> spaced(SleekSpace? space) {
     if (this.isEmpty) {
       return const <Widget>[];
     }

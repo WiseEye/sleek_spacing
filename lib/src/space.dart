@@ -13,23 +13,23 @@ enum SleekSpace {
   extraBig,
 }
 
-extension SleekSpaceExtension on SleekSpace {
-  double toPoints({BuildContext context, SleekSpacingData data}) {
+extension SleekSpaceExtension on SleekSpace? {
+  double toPoints({BuildContext? context, SleekSpacingData? data}) {
     assert(context != null || data != null);
-    final spacing = data ?? SleekSpacing.of(context);
+    final spacing = data ?? SleekSpacing.of(context!);
     switch (this) {
       case SleekSpace.extraSmall:
-        return spacing.extraSmall;
+        return spacing!.extraSmall;
       case SleekSpace.normal:
-        return spacing.normal;
+        return spacing!.normal;
       case SleekSpace.small:
-        return spacing.small;
+        return spacing!.small;
       case SleekSpace.medium:
-        return spacing.medium;
+        return spacing!.medium;
       case SleekSpace.big:
-        return spacing.big;
+        return spacing!.big;
       case SleekSpace.extraBig:
-        return spacing.extraBig;
+        return spacing!.extraBig;
       default:
         return 0;
     }

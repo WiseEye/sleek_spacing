@@ -7,21 +7,21 @@ part 'spacing_data.freezed.dart';
 @freezed
 abstract class SleekSpacingData with _$SleekSpacingData {
   const factory SleekSpacingData._({
-    @required double extraSmall,
-    @required double small,
-    @required double normal,
-    @required double medium,
-    @required double big,
-    @required double extraBig,
+    required double extraSmall,
+    required double small,
+    required double normal,
+    required double medium,
+    required double big,
+    required double extraBig,
   }) = _SleekSpacingData;
 
   factory SleekSpacingData({
-    double extraSmall,
-    double small,
-    @required double normal,
-    double medium,
-    double big,
-    double extraBig,
+    double? extraSmall,
+    double? small,
+    required double normal,
+    double? medium,
+    double? big,
+    double? extraBig,
   }) {
     return SleekSpacingData._(
       extraSmall: extraSmall ?? (normal * 0.25),

@@ -9,7 +9,7 @@ class SleekInsets {
   final SleekSpace top;
   final SleekSpace bottom;
   final SleekSpace left;
-  final SleekSpace right;
+  final SleekSpace? right;
 
   static const SleekInsets none = SleekInsets(all: SleekSpace.none);
   static const SleekInsets allSmall = SleekInsets(all: SleekSpace.small);
@@ -18,13 +18,13 @@ class SleekInsets {
   static const SleekInsets allBig = SleekInsets(all: SleekSpace.big);
 
   const SleekInsets({
-    SleekSpace top,
-    SleekSpace bottom,
-    SleekSpace right,
-    SleekSpace left,
-    SleekSpace vertical,
-    SleekSpace horizontal,
-    SleekSpace all,
+    SleekSpace? top,
+    SleekSpace? bottom,
+    SleekSpace? right,
+    SleekSpace? left,
+    SleekSpace? vertical,
+    SleekSpace? horizontal,
+    SleekSpace? all,
   })  : this.top = top != null
             ? top
             : (vertical != null
@@ -85,9 +85,9 @@ class SleekInsets {
         sides,
       );
 
-  EdgeInsets toEdgeInsets({BuildContext context, SleekSpacingData data}) {
+  EdgeInsets toEdgeInsets({BuildContext? context, SleekSpacingData? data}) {
     assert(context != null || data != null);
-    final spacing = data ?? SleekSpacing.of(context);
+    final spacing = data ?? SleekSpacing.of(context!);
     return EdgeInsets.only(
       left: this.left.toPoints(data: spacing),
       right: this.right.toPoints(data: spacing),

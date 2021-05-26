@@ -3,15 +3,15 @@ import 'package:sleek_spacing/src/spacing_data.dart';
 
 class SleekSpacing extends StatefulWidget {
   final SleekSpacingData data;
-  final Widget child;
+  final Widget? child;
 
   const SleekSpacing({
-    Key key,
+    Key? key,
     this.child,
-    @required this.data,
+    required this.data,
   }) : super(key: key);
 
-  static SleekSpacingData of(BuildContext context) {
+  static SleekSpacingData? of(BuildContext context) {
     final provider =
         context.dependOnInheritedWidgetOfExactType<SleekSpacingProvider>();
     if (provider == null) return SleekSpacingData.fallback();
@@ -34,7 +34,7 @@ class SleekSpacing extends StatefulWidget {
 }
 
 class _SleekSpacingState extends State<SleekSpacing> {
-  SleekSpacingData _data;
+  SleekSpacingData? _data;
 
   @override
   void initState() {
@@ -50,17 +50,17 @@ class _SleekSpacingState extends State<SleekSpacing> {
   Widget build(BuildContext context) {
     return SleekSpacingProvider(
       value: _data ?? SleekSpacingData.fallback(),
-      child: widget.child,
+      child: widget.child!,
     );
   }
 }
 
 class SleekSpacingProvider extends InheritedWidget {
-  final SleekSpacingData value;
+  final SleekSpacingData? value;
 
   SleekSpacingProvider({
-    Key key,
-    Widget child,
+    Key? key,
+    required Widget child,
     this.value,
   }) : super(
           key: key,
